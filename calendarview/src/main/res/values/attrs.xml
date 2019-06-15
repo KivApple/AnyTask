@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<attr name="colorPrimary" format="color" />
+	<attr name="colorForeground" format="color" />
+	<attr name="headerHeight" format="dimension" />
+	<attr name="textColor" format="color" />
+	<attr name="textSize" format="dimension" />
+	
+	<declare-styleable name="LabelGridView">
+		<attr name="cellMargin" format="dimension" />
+		<attr name="cellSize" format="dimension" />
+		<attr name="cellBorderWidth" format="dimension" />
+		<attr name="headerHeight" />
+		<attr name="textSize" />
+	</declare-styleable>
+	<declare-styleable name="MonthView">
+		<attr name="colorPrimary" />
+		<attr name="colorForeground" />
+		<attr name="textColor" />
+		<attr name="persistentHeight" format="boolean" />
+		<attr name="exactMonth" format="boolean" />
+	</declare-styleable>
+	<declare-styleable name="WeekView">
+		<attr name="colorPrimary" />
+		<attr name="colorForeground" />
+		<attr name="textColor" />
+		<attr name="checkable" format="boolean" />
+		<attr name="dimmed" format="boolean" />
+	</declare-styleable>
+</resources>

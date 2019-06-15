@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="@dimen/taskHorizontalMargin"
+	android:paddingRight="@dimen/taskHorizontalMargin"
+	android:paddingTop="@dimen/taskVerticalMargin"
+	android:paddingBottom="@dimen/taskVerticalMargin">
+	
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:contentDescription="@string/reorder"
+		android:visibility="invisible"
+		app:srcCompat="@drawable/ic_reorder_black_24dp" />
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:paddingEnd="6dp"
+		android:paddingRight="6dp">
+		
+		<CheckBox
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="invisible"/>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			app:srcCompat="@drawable/ic_add_black_24dp"
+			android:contentDescription="@string/new_task"/>
+	</FrameLayout>
+	<TextView
+		android:layout_weight="1"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		style="@style/ItemTask.Title"
+		android:textColor="?attr/textColorDisabled"
+		android:clickable="false"
+		android:text="@string/new_task" />
+</LinearLayout>

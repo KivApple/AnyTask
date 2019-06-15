@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<attr name="normalBackgroundColor" format="color" />
+	<attr name="selectedBackgroundColor" format="color" />
+	
+	<attr name="textColorPrimary" format="color" />
+	<attr name="textColorSecondary" format="color" />
+	<attr name="textColorDisabled" format="color" />
+	<attr name="actionBarTheme" format="reference" />
+	<attr name="actionBarPopupTheme" format="reference" />
+	<attr name="actionBarTitleStyle" format="reference" />
+	<attr name="actionBarSubtitleStyle" format="reference" />
+	<attr name="actionBarTextColor" format="color" />
+	
+	<attr name="pinPadDotDrawable" format="reference" />
+	
+	<attr name="mediumPriorityTaskBackground" format="color" />
+	<attr name="highPriorityTaskBackground" format="color" />
+	<attr name="highestPriorityTaskBackground" format="color" />
+	
+	<attr name="completedPriorityDateBackground" format="color" />
+	<attr name="normalPriorityDateBackground" format="color" />
+	<attr name="mediumPriorityDateBackground" format="color" />
+	<attr name="highPriorityDateBackground" format="color" />
+	<attr name="highestPriorityDateBackground" format="color" />
+	
+	<attr name="textColorLink" format="color" />
+</resources>

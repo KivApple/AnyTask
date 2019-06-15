@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="@string/appearance">
+		
+		<ListPreference
+			android:key="color_scheme"
+			android:icon="@drawable/ic_color_lens_black_24dp"
+			android:title="@string/color_scheme"
+			android:entries="@array/color_scheme_names"
+			android:entryValues="@array/color_scheme_keys"
+			android:defaultValue="@string/color_scheme_default_key" />
+		<ListPreference
+			android:key="language"
+			android:icon="@drawable/ic_translate_black_24dp"
+			android:title="@string/language"
+			android:entries="@array/languages"
+			android:entryValues="@array/language_codes"
+			android:defaultValue="@string/empty" />
+		<SwitchPreference
+			android:key="move_completed_tasks_down"
+			android:defaultValue="true"
+			android:icon="@drawable/ic_file_download_black_24dp"
+			android:title="@string/move_completed_tasks_down" />
+		<SwitchPreference
+			android:key="hide_completed_tasks"
+			android:dependency="move_completed_tasks_down"
+			android:icon="@drawable/ic_check_black_24dp"
+			android:defaultValue="false"
+			android:title="@string/hide_completed_tasks" />
+		<SwitchPreference
+			android:key="enable_task_context_menu"
+			android:icon="@drawable/ic_menu_black_24dp"
+			android:defaultValue="true"
+			android:title="@string/enable_task_context_menu" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/notifications">
+		
+		<RingtonePreference
+			android:key="alarm_ringtone"
+			android:ringtoneType="alarm"
+			android:icon="@drawable/ic_alarm_black_24dp"
+			android:title="@string/alarm_ringtone" />
+		<SwitchPreference
+			android:key="alarm_vibration"
+			android:icon="@drawable/ic_vibration_black_24dp"
+			android:defaultValue="true"
+			android:title="@string/alarm_vibration" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/security">
+		
+		<SwitchPreference
+			android:key="enable_pin"
+			android:icon="@drawable/ic_lock_black_24dp"
+			android:title="@string/enable_pin" />
+		<Preference
+			android:key="change_pin"
+			android:title="@string/change_pin"
+			android:dependency="enable_pin" />
+		<ListPreference
+			android:key="lock_timeout"
+			android:icon="@drawable/ic_av_timer_black_24dp"
+			android:title="@string/lock_timeout"
+			android:defaultValue="@string/lock_timeout_default_value"
+			android:entries="@array/lock_timeout_names"
+			android:entryValues="@array/lock_timeout_values"/>
+		<SwitchPreference
+			android:key="shuffle_pin_pad_keys"
+			android:icon="@drawable/ic_dialpad_black_24dp"
+			android:title="@string/shuffle_pin_pad_keys" />
+		<SwitchPreference
+			android:key="enable_biometrics"
+			android:icon="@drawable/ic_fingerprint_black_24dp"
+			android:title="@string/enable_biometrics"
+			android:summary="@string/enable_biometrics_summary"
+			android:defaultValue="true" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/sync">
+		
+		<Preference
+			android:key="export_data_to_file"
+			android:icon="@drawable/ic_file_upload_black_24dp"
+			android:title="@string/export_data_to_file" />
+		<Preference
+			android:key="import_data_from_file"
+			android:icon="@drawable/ic_file_download_black_24dp"
+			android:title="@string/import_data_from_file" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/about">
+		
+		<Preference
+			android:icon="@drawable/ic_email_black_24dp"
+			android:title="@string/copyright"
+			android:summary="Ivan KOLESNIKOV &#169; 2018">
+			<intent
+				android:action="android.intent.action.SENDTO"
+				android:data="mailto:kiv.apple\@gmail.com" />
+		</Preference>
+		<Preference
+			android:icon="@drawable/ic_autorenew_black_24dp"
+			android:title="@string/news_and_updates"
+			android:summary="Telegram\n\@anytask">
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="https://t.me/anytask" />
+		</Preference>
+		<Preference
+			android:key="show_last_crash_log"
+			android:icon="@drawable/ic_announcement_black_24dp"
+			android:title="@string/show_last_crash_log" />
+		<SwitchPreference
+			android:key="enable_debug_info"
+			android:icon="@drawable/ic_announcement_black_24dp"
+			android:defaultValue="false"
+			android:title="@string/enable_debug_info" />
+	</PreferenceCategory>
+</PreferenceScreen>

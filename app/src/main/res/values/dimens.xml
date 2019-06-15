@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="taskSeparatorLineHeight">1dp</dimen>
+	<dimen name="taskHorizontalMargin">20dp</dimen>
+	<dimen name="taskVerticalMargin">3dp</dimen>
+	<dimen name="taskListMarginBottom">48dp</dimen>
+	<dimen name="taskListActionBarTitlePadding">16dp</dimen>
+	<dimen name="taskListActionBarButtonsPadding">8dp</dimen>
+	
+	<dimen name="noteCardMargin">8dp</dimen>
+	<dimen name="noteCardPadding">8dp</dimen>
+	<dimen name="noteCardCornerRadius">2dp</dimen>
+	<dimen name="noteCardElevation">2dp</dimen>
+	<dimen name="noteCardContentMaxHeight">200dp</dimen>
+	<dimen name="noteFolderTreeIndent">24dp</dimen>
+	
+	<dimen name="bottomSheetDialogMainContentHeight">400dp</dimen>
+	
+	<dimen name="popupWindowElevation">20dp</dimen>
+</resources>

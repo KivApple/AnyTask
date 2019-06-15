@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:id="@+id/every_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintBottom_toBottomOf="@id/task_repetition_interval_picker"
+			app:layout_constraintEnd_toStartOf="@+id/task_repetition_interval_picker"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintHorizontal_chainStyle="packed"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="@id/task_repetition_interval_picker"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			tools:text="Every" />
+		
+		<NumberPicker
+			android:id="@+id/task_repetition_interval_picker"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toStartOf="@+id/task_repetition_mode_picker"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toEndOf="@+id/every_label"
+			app:layout_constraintTop_toTopOf="parent" />
+		
+		<NumberPicker
+			android:id="@+id/task_repetition_mode_picker"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toEndOf="@+id/task_repetition_interval_picker"
+			app:layout_constraintTop_toTopOf="parent"
+			android:descendantFocusability="blocksDescendants" />
+		
+		<id.pineapple.calendarview.WeekView
+			android:id="@+id/task_repetition_week_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@id/task_monthly_repetition_mode_radio_group"
+			app:layout_constraintBottom_toBottomOf="@id/task_monthly_repetition_mode_radio_group"
+			app:colorPrimary="?attr/colorAccent" />
+		
+		<RadioGroup
+			android:id="@+id/task_monthly_repetition_mode_radio_group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toBottomOf="@id/task_repetition_interval_picker"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent">
+			
+			<RadioButton
+				android:id="@+id/task_monthly_repetition_since_start"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="1st day since month start" />
+			<RadioButton
+				android:id="@+id/task_monthly_repetition_before_end"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="31st day before month end" />
+		</RadioGroup>
+		
+		<TextView
+			android:id="@+id/task_repetition_yearly_date_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintStart_toStartOf="@id/task_monthly_repetition_mode_radio_group"
+			app:layout_constraintEnd_toEndOf="@id/task_monthly_repetition_mode_radio_group"
+			app:layout_constraintTop_toTopOf="@id/task_monthly_repetition_mode_radio_group"
+			app:layout_constraintBottom_toBottomOf="@id/task_monthly_repetition_mode_radio_group"
+			tools:text="December 1st" />
+		
+		<TextView
+			android:id="@+id/task_repetition_stop_date"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/task_monthly_repetition_mode_radio_group"
+			android:clickable="true"
+			android:focusable="true"
+			android:background="?attr/selectableItemBackground"
+			android:padding="8dp"
+			tools:drawableStart="@drawable/ic_autorenew_gray_24dp"
+			android:drawablePadding="8dp"
+			android:gravity="center_vertical"
+			tools:text="Repeat forever" />
+		
+		<Button
+			android:id="@+id/task_delete_repetition_button"
+			style="@style/Widget.AppCompat.Button.Borderless"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:minWidth="0dp"
+			android:text="@string/delete"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/task_repetition_stop_date" />
+		
+		<Button
+			android:id="@+id/task_repetition_save_button"
+			style="@style/Widget.AppCompat.Button.Borderless.Colored"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:minWidth="0dp"
+			android:text="@string/save"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/task_repetition_stop_date" />
+	</android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/action_task_copy"
+		android:icon="@drawable/ic_content_copy_white_24dp"
+		android:title="@string/copy" />
+	<item
+		android:id="@+id/action_task_postpone_to_tomorrow"
+		android:icon="@drawable/ic_redo_white_24dp"
+		android:title="@string/postpone_to_tomorrow" />
+	<item
+		android:id="@+id/action_task_reschedule_to"
+		android:icon="@drawable/ic_swap_horiz_white_24dp"
+		android:title="@string/reschedule_to" />
+	<item
+		android:id="@+id/action_task_delete"
+		android:icon="@drawable/ic_delete_white_24dp"
+		android:title="@string/delete" />
+</menu>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="?attr/colorPrimary"
+	android:keepScreenOn="true"
+	tools:context="id.pineapple.anytask.AlarmActivity">
+	
+	<ImageView
+		android:id="@+id/alarm_icon"
+		android:layout_width="128dp"
+		android:layout_height="128dp"
+		android:contentDescription="@string/alarm"
+		app:layout_constraintBottom_toTopOf="@+id/task_title_label"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_chainStyle="packed"
+		android:tint="?attr/actionBarTextColor"
+		app:srcCompat="@drawable/ic_alarm_gray_24dp" />
+	
+	<TextView
+		android:id="@+id/task_title_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toTopOf="@+id/mark_task_as_completed_checkbox"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/alarm_icon"
+		style="?attr/actionBarTitleStyle"
+		android:gravity="center"
+		tools:text="Task title" />
+	
+	<android.support.v7.widget.AppCompatCheckBox
+		android:id="@+id/mark_task_as_completed_checkbox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/mark_as_completed"
+		android:textColor="?attr/actionBarTextColor"
+		app:buttonTint="?attr/actionBarTextColor"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/task_title_label" />
+	
+	<Button
+		android:id="@+id/alarm_dismiss_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/mark_task_as_completed_checkbox"
+		style="@style/Widget.AppCompat.Button.Borderless"
+		android:textColor="?attr/actionBarTextColor"
+		android:text="@string/dismiss" />
+</android.support.constraint.ConstraintLayout>

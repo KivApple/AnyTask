@@ -1,0 +1,271 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<string name="app_name" translatable="false">AnyTask</string>
+	<string name="empty" translatable="false" />
+	
+	<string name="tasks">Tasks</string>
+	<string name="notes">Notes</string>
+	<string name="settings">Settings</string>
+	
+	<string name="new_task">List item</string>
+	<plurals name="completed_task_count">
+		<item quantity="one">%1$d checked item</item>
+		<item quantity="other">%1$d checked items</item>
+	</plurals>
+	<string name="reorder">Reorder</string>
+	<string name="delete">Delete</string>
+	<string name="recover">Recover</string>
+	<string name="task_deleted">Task deleted</string>
+	<string name="toggle_collapse">Toggle collapse</string>
+	<plurals name="tasks_deleted">
+		<item quantity="one">%1$d task deleted</item>
+		<item quantity="other">%1$d tasks deleted</item>
+	</plurals>
+	<string name="today">today</string>
+	<string name="yesterday">yesterday</string>
+	<string name="tomorrow">tomorrow</string>
+	<plurals name="days_ago">
+		<item quantity="one">%1$d day ago</item>
+		<item quantity="other">%1$d days ago</item>
+	</plurals>
+	<plurals name="days_later">
+		<item quantity="one">%1$d day later</item>
+		<item quantity="other">%1$d days later</item>
+	</plurals>
+	<string-array name="task_priority_names">
+		<item>Normal priority</item>
+		<item>Medium priority</item>
+		<item>High priority</item>
+		<item>Highest priority</item>
+	</string-array>
+	<string name="show_task_details">Show task details</string>
+	<string name="go_forward">Go forward</string>
+	<string name="go_backward">Go backward</string>
+	<string name="reminder_not_set">Reminder not set</string>
+	<string name="no_repetition_configured">No repetition configured</string>
+	<string name="task_repetition">Task repetition</string>
+	<string name="task_reminder">Task reminder</string>
+	<string name="reschedule_to">Reschedule to…</string>
+	<string name="reschedule_n_to">Reschedule\nto…</string>
+	<string name="pin">Pin</string>
+	<string name="postpone_to_tomorrow">Postpone to tomorrow</string>
+	<string name="postpone_to_n_tomorrow">Postpone to\ntomorrow</string>
+	<string name="auto_postpone">Auto postpone</string>
+	<string name="auto_n_postpone">Auto\npostpone</string>
+	<string name="cancel">Cancel</string>
+	<string name="task_rescheduled_to">Task rescheduled to %1$s</string>
+	<plurals name="tasks_rescheduled_to">
+		<item quantity="one">%1$d task rescheduled to %2$s</item>
+		<item quantity="other">%1$d tasks rescheduled to %2$s</item>
+	</plurals>
+	<string name="reschedule_task">Reschedule task</string>
+	<plurals name="reschedule_tasks">
+		<item quantity="one">Reschedule %1$d task</item>
+		<item quantity="other">Reschedule %1$d tasks</item>
+	</plurals>
+	<string name="alarm_at">Alarm at %1$s</string>
+	<string name="postponed_from">Postponed from %1$s</string>
+	<string name="rescheduled_from">Rescheduled from %1$s</string>
+	<string name="pinned">Pinned</string>
+	<string name="set">Set</string>
+	<string name="save">Save</string>
+	<string name="select">Select</string>
+	<string name="clear">Clear</string>
+	<plurals name="every">
+		<item quantity="one">Every</item>
+		<item quantity="other">Every</item>
+	</plurals>
+	<plurals name="every_day">
+		<item quantity="one">day</item>
+		<item quantity="other">days</item>
+	</plurals>
+	<plurals name="every_week">
+		<item quantity="one">week</item>
+		<item quantity="other">weeks</item>
+	</plurals>
+	<plurals name="every_month">
+		<item quantity="one">month</item>
+		<item quantity="other">months</item>
+	</plurals>
+	<plurals name="every_year">
+		<item quantity="one">year</item>
+		<item quantity="other">years</item>
+	</plurals>
+	<string-array name="th_day_since_month_start" tools:ignore="InconsistentArrays">
+		<item>=1 on the %1$dst day since month start</item>
+		<item>=2 on the %1$dnd day since month start</item>
+		<item>=3 on the %1$drd day since month start</item>
+		<item>* on the %1$dth day since month start</item>
+	</string-array>
+	<string-array name="th_day_before_month_end" tools:ignore="InconsistentArrays">
+		<item>=1 on the %1$dst day before month end</item>
+		<item>=2 on the %1$dnd day before month end</item>
+		<item>=3 on the %1$drd day before month end</item>
+		<item>* on the %1$dth day before month end</item>
+	</string-array>
+	<string name="date_pattern_without_year">\'on\' MMMM d</string>
+	<string name="repeatable_task">Repeatable task</string>
+	<string name="ask_delete_repeatable_task">You are about to delete one or more repeatable tasks. This will remove all similar tasks. This action cannot be undone. Perhaps you want to first delete the repetition in the task settings, and then delete it (this will save the repetition of the task in the past).</string>
+	<string name="only_today">Only today</string>
+	<string name="repeatable_task_priority_changed">You have changed repeatable task priority</string>
+	<string name="repeatable_task_pinned">You have pinned repeatable task</string>
+	<string name="repeatable_task_unpinned">You have unpinned repeatable task</string>
+	<string name="repeatable_task_alarm_changed">You have changed alarm settings for repeatable task</string>
+	<string name="alarm_will_never_fire">Alarm will never fire</string>
+	<string name="alarm_will_fire_right_now">Alarm will fire right now</string>
+	<string name="time_before_alarm">%1$s until alarm</string>
+	<string name="on_weekdays">on %1$s</string>
+	<string name="setup_alarm">Setup alarm…</string>
+	<string name="set_priority">Set priority…</string>
+	<string name="repetition">Repetition…</string>
+	<string name="task_priority">Task priority</string>
+	<string name="pinned_tasks">Pinned tasks</string>
+	<string name="alarms">Alarms</string>
+	<string name="alarm">Alarm</string>
+	<string name="mark_as_completed">Mark as completed</string>
+	<string name="clear_alarm">Clear alarm</string>
+	<string name="exit">Exit</string>
+	<string name="enter_new_pin">Enter new PIN</string>
+	<string name="enter_new_pin_again">Enter new PIN again</string>
+	<string name="enter_old_pin">Enter old PIN</string>
+	<string name="pin_does_not_match">PIN does not match</string>
+	<string name="wrong_pin">Wrong PIN</string>
+	<string name="fingerprint_auth_failed">Fingerprint authorization failed</string>
+	<string name="touch_fingerprint_sensor">Touch fingerprint sensor</string>
+	<string name="repeat_forever">Repeat forever</string>
+	<string name="repeat_until">Repeat until %1$s</string>
+	<string name="dismiss">Dismiss</string>
+	<string name="repeatable_task_modified">You have modified repeatable task</string>
+	<string-array name="months">
+		<item>January</item>
+		<item>February</item>
+		<item>March</item>
+		<item>April</item>
+		<item>May</item>
+		<item>June</item>
+		<item>July</item>
+		<item>August</item>
+		<item>September</item>
+		<item>October</item>
+		<item>November</item>
+		<item>December</item>
+	</string-array>
+	<string name="no_attached_note">No attached note</string>
+	
+	<string name="note_">Note…</string>
+	<string name="title">Title</string>
+	<string name="text">Text</string>
+	<string name="note_deleted">Note deleted</string>
+	<plurals name="notes_deleted">
+		<item quantity="one">%1$d note deleted</item>
+		<item quantity="other">%1$d notes deleted</item>
+	</plurals>
+	<string name="note">Note</string>
+	<string name="home_folder">Home folder</string>
+	<string name="folders">Folders</string>
+	<string name="new_folder">New folder</string>
+	<string name="ask_delete_note_folder">You are about to delete a folder. This will delete all folders and notes in it. This action cannot be undone. Are you sure?</string>
+	<string name="edit">Edit</string>
+	<string name="move_to_folder">Move to folder…</string>
+	<string name="copy_to_folder">Copy to folder…</string>
+	<string name="folder">Folder</string>
+	<plurals name="elements_moved">
+		<item quantity="one">%1$d element moved</item>
+		<item quantity="other">%1$d elements moved</item>
+	</plurals>
+	<plurals name="notes_copied">
+		<item quantity="one">%1$d note copied</item>
+		<item quantity="other">%1$d notes copied</item>
+	</plurals>
+	<string name="in_folder">In %1$s</string>
+	<string name="move">Move</string>
+	<string name="copy">Copy</string>
+	<string name="new_list_note">New list</string>
+	<string name="toggle_note_list_mode">Toggle list mode</string>
+	<string name="no_notes">There are no notes here yet</string>
+	<string name="list">List</string>
+	
+	<string name="appearance">Appearance</string>
+	<string name="color_scheme">Color scheme</string>
+	<string-array name="color_scheme_names">
+		<item>Light</item>
+		<item>Dark</item>
+	</string-array>
+	<string-array name="color_scheme_keys">
+		<item>AppTheme.Light</item>
+		<item>AppTheme.Dark</item>
+	</string-array>
+	<string name="color_scheme_default_key" translatable="false">AppTheme.Light</string>
+	<string name="language">Language</string>
+	<string-array name="languages">
+		<item>System</item>
+		<item>English</item>
+		<item>Русский</item>
+	</string-array>
+	<string-array name="language_codes">
+		<item/>
+		<item>en</item>
+		<item>ru</item>
+	</string-array>
+	<string name="hide_completed_tasks">Hide completed tasks</string>
+	<string name="move_completed_tasks_down">Move completed tasks down</string>
+	<string name="enable_task_context_menu">Classic task context menu</string>
+	<string name="notifications">Notifications</string>
+	<string name="alarm_ringtone">Alarm ringtone</string>
+	<string name="silent">Silent</string>
+	<string name="alarm_vibration">Alarm vibration</string>
+	<string name="security">Security</string>
+	<string name="enable_pin">Enable PIN</string>
+	<string name="change_pin">Change PIN</string>
+	<string name="lock_timeout">Lock timeout</string>
+	<string-array name="lock_timeout_names">
+		<item>5 seconds</item>
+		<item>10 seconds</item>
+		<item>30 seconds</item>
+		<item>1 minute</item>
+		<item>2 minutes</item>
+		<item>5 minutes</item>
+		<item>10 minutes</item>
+		<item>30 minutes</item>
+		<item>Never</item>
+	</string-array>
+	<string-array name="lock_timeout_values">
+		<item>5</item>
+		<item>10</item>
+		<item>30</item>
+		<item>60</item>
+		<item>120</item>
+		<item>300</item>
+		<item>600</item>
+		<item>1800</item>
+		<item>-1</item>
+	</string-array>
+	<string name="lock_timeout_default_value" translatable="false">10</string>
+	<string name="shuffle_pin_pad_keys">Shuffle PIN pad keys</string>
+	<string name="enable_biometrics">Enable biometrics</string>
+	<string name="enable_biometrics_summary">If available on device</string>
+	<string name="about">About</string>
+	<string name="copyright">Copyright</string>
+	<string name="news_and_updates">News and updates</string>
+	<string name="show_last_crash_log">Show last crash log</string>
+	<string name="last_crash_log">Last crash log</string>
+	<string name="close">Close</string>
+	<string name="copy_to_clipboard">Copy to clipboard</string>
+	<string name="copied">Copied</string>
+	<string name="sync">Sync</string>
+	<string name="export_data_to_file">Export data to file…</string>
+	<string name="import_data_from_file">Import data from file…</string>
+	<string name="file_name">File name</string>
+	<string name="data_export">Data export</string>
+	<string name="data_export_finished">Data export finished</string>
+	<string name="data_export_failed">Data export failed</string>
+	<string name="share">Share</string>
+	<string name="ask_override_file">File %1$s already exists. Override it?</string>
+	<string name="continue_">Continue</string>
+	<string name="important_notifications">Important notifications</string>
+	<string name="confirm_import">Importing data will delete all existing tasks and notes. This action cannot be undone. Do you really want to do this?</string>
+	<string name="data_import">Data import</string>
+	<string name="data_import_">Data import…</string>
+	<string name="data_import_finished">Data import finished</string>
+	<string name="data_import_failed">Data import failed</string>
+	<string name="enable_debug_info">Enable debug info</string>
+</resources>

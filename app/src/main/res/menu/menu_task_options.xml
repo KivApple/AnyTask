@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/task_option_auto_postpone"
+		android:icon="@drawable/ic_none_24dp"
+		android:checkable="true"
+		android:title="@string/auto_postpone" />
+	<item
+		android:id="@+id/task_option_postpone_to_tomorrow"
+		android:icon="@drawable/ic_redo_black_24dp"
+		android:title="@string/postpone_to_tomorrow" />
+	<item
+		android:id="@+id/task_option_reschedule_to"
+		android:icon="@drawable/ic_swap_horiz_black_24dp"
+		android:title="@string/reschedule_to" />
+	<item
+		android:id="@+id/task_option_setup_alarm"
+		android:icon="@drawable/ic_alarm_gray_24dp"
+		android:title="@string/setup_alarm" />
+	<item
+		android:id="@+id/task_option_clear_alarm"
+		android:icon="@drawable/ic_alarm_off_black_24dp"
+		android:title="@string/clear_alarm" />
+	<item
+		android:id="@+id/task_option_set_priority"
+		android:icon="@drawable/ic_swap_vert_black_24dp"
+		android:title="@string/set_priority" />
+	<item
+		android:id="@+id/task_option_note"
+		android:icon="@drawable/ic_library_books_gray_24dp"
+		android:title="@string/note_"/>
+	<item
+		android:id="@+id/task_option_repetition"
+		android:icon="@drawable/ic_autorenew_gray_24dp"
+		android:title="@string/repetition"/>
+	<item
+		android:id="@+id/task_option_pin"
+		android:icon="@drawable/ic_none_24dp"
+		android:checkable="true"
+		android:title="@string/pin" />
+</menu>

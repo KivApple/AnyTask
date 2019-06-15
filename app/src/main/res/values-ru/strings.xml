@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<string name="tasks">Задачи</string>
+	<string name="notes">Заметки</string>
+	<string name="settings">Настройки</string>
+	
+	<string name="new_task">Элемент списка</string>
+	<plurals name="completed_task_count">
+		<item quantity="one">%1$d отмеченный элемент</item>
+		<item quantity="few">%1$d отмеченных элемента</item>
+		<item quantity="many">%1$d отмеченных элемента</item>
+	</plurals>
+	<string name="reorder">Переупорядочить</string>
+	<string name="delete">Удалить</string>
+	<string name="recover">Восстановить</string>
+	<string name="task_deleted">Задача удалена</string>
+	<string name="toggle_collapse">Переключить отображение</string>
+	<plurals name="tasks_deleted">
+		<item quantity="one">%1$d задача удалена</item>
+		<item quantity="few">%1$d задачи удалены</item>
+		<item quantity="many">%1$d задач удалено</item>
+	</plurals>
+	<string name="today">сегодня</string>
+	<string name="yesterday">вчера</string>
+	<string name="tomorrow">завтра</string>
+	<plurals name="days_ago">
+		<item quantity="one">%1$d день назад</item>
+		<item quantity="few">%1$d дня назад</item>
+		<item quantity="many">%1$d дней назад</item>
+	</plurals>
+	<plurals name="days_later">
+		<item quantity="one">через %1$d день</item>
+		<item quantity="few">через %1$d дня</item>
+		<item quantity="many">через %1$d дней</item>
+	</plurals>
+	<string-array name="task_priority_names">
+		<item>Нормальный приоритет</item>
+		<item>Средний приоритет</item>
+		<item>Высокий приоритет</item>
+		<item>Наивысший приоритет</item>
+	</string-array>
+	<string name="show_task_details">Показать подробности задачи</string>
+	<string name="go_forward">Перейти вперёд</string>
+	<string name="go_backward">Перейти назад</string>
+	<string name="reminder_not_set">Напоминание не установлено</string>
+	<string name="no_repetition_configured">Повторение не настроено</string>
+	<string name="task_repetition">Повторение задачи</string>
+	<string name="task_reminder">Напоминание о задаче</string>
+	<string name="reschedule_to">Перенести…</string>
+	<string name="reschedule_n_to">Перенести\n…</string>
+	<string name="pin">Закрепить</string>
+	<string name="postpone_to_tomorrow">Отложить на завтра</string>
+	<string name="postpone_to_n_tomorrow">Отложить на\nзавтра</string>
+	<string name="auto_postpone">Откладывать автоматически</string>
+	<string name="auto_n_postpone">Откладывать\nавтоматически</string>
+	<string name="cancel">Отменить</string>
+	<string name="task_rescheduled_to">Задача перенесена на %1$s</string>
+	<plurals name="tasks_rescheduled_to">
+		<item quantity="one">%1$d задача перенесена на %2$s</item>
+		<item quantity="few">%1$d задачи перенесено на %2$s</item>
+		<item quantity="many">%1$d задач перенесено на %2$s</item>
+	</plurals>
+	<string name="reschedule_task">Перенести задачу</string>
+	<plurals name="reschedule_tasks">
+		<item quantity="one">Перенести %1$d задачу</item>
+		<item quantity="few">Перенести %1$d задачи</item>
+		<item quantity="many">Перенести %1$d задач</item>
+	</plurals>
+	<string name="alarm_at">Напоминание в %1$s</string>
+	<string name="postponed_from">Отложено с %1$s</string>
+	<string name="rescheduled_from">Перенесено с %1$s</string>
+	<string name="pinned">Закреплено</string>
+	<string name="set">Установить</string>
+	<string name="save">Сохранить</string>
+	<string name="select">Выбрать</string>
+	<string name="clear">Очистить</string>
+	<plurals name="every">
+		<item quantity="one" tools:ignore="ImpliedQuantity">Каждый</item>
+		<item quantity="few">Каждые</item>
+		<item quantity="many">Каждые</item>
+	</plurals>
+	<plurals name="every_day">
+		<item quantity="one" tools:ignore="ImpliedQuantity">день</item>
+		<item quantity="few">дня</item>
+		<item quantity="many">дней</item>
+	</plurals>
+	<plurals name="every_week">
+		<item quantity="one" tools:ignore="ImpliedQuantity">неделю</item>
+		<item quantity="few">недели</item>
+		<item quantity="many">недель</item>
+	</plurals>
+	<plurals name="every_month">
+		<item quantity="one" tools:ignore="ImpliedQuantity">месяц</item>
+		<item quantity="few">месяца</item>
+		<item quantity="many">месяцев</item>
+	</plurals>
+	<plurals name="every_year">
+		<item quantity="one" tools:ignore="ImpliedQuantity">год</item>
+		<item quantity="few">года</item>
+		<item quantity="many">лет</item>
+	</plurals>
+	<string-array name="th_day_since_month_start" tools:ignore="InconsistentArrays">
+		<item>=12 ый день с начала месяца</item>
+		<item>%2 ой день с начала месяца</item>
+		<item>=13 ый день с начала месяца</item>
+		<item>%3 ий день с начала месяца</item>
+		<item>=16 ый день с начала месяца</item>
+		<item>%6 ой день с начала месяца</item>
+		<item>=17 ый день с начала месяца</item>
+		<item>%7 ой день с начала месяца</item>
+		<item>=18 ый день с начала месяца</item>
+		<item>%8 ой день с начала месяца</item>
+		<item>* ый день с начала месяца</item>
+	</string-array>
+	<string-array name="th_day_before_month_end" tools:ignore="InconsistentArrays">
+		<item>=12 ый день с конца месяца</item>
+		<item>%2 ой день с конца месяца</item>
+		<item>=13 ый день с конца месяца</item>
+		<item>%3 ий день с конца месяца</item>
+		<item>=16 ый день с конца месяца</item>
+		<item>%6 ой день с конца месяца</item>
+		<item>=17 ый день с конца месяца</item>
+		<item>%7 ой день с конца месяца</item>
+		<item>=18 ый день с конца месяца</item>
+		<item>%8 ой день с конца месяца</item>
+		<item>* ый день с конца месяца</item>
+	</string-array>
+	<string name="date_pattern_without_year">d MMMM</string>
+	<string name="repeatable_task">Повторяемая задача</string>
+	<string name="ask_delete_repeatable_task">Вы собираетесь удалить одну или несколько повторяемых задач. Это удалит все аналогичные задачи. Это действие не может быть отменено. Возможно, вы хотите сначала отменить повтор в настройках задачи и только затем удалить задачу (в этом случае все прошлые повторы задачи сохранятся).</string>
+	<string name="only_today">Только сегодня</string>
+	<string name="repeatable_task_priority_changed">Вы изменили приоритет повторяемой задачи</string>
+	<string name="repeatable_task_pinned">Вы закрепили повторяемую задачу</string>
+	<string name="repeatable_task_unpinned">Вы открепили повторяемую задачу</string>
+	<string name="repeatable_task_alarm_changed">Вы изменили настройки напоминаний повторяемой задачи</string>
+	<string name="alarm_will_never_fire">Напоминание никогда не сработает</string>
+	<string name="alarm_will_fire_right_now">Напоминание сработает прямо сейчас</string>
+	<string name="time_before_alarm">%1$s до напоминания</string>
+	<string name="on_weekdays">по %1$s</string>
+	<string name="setup_alarm">Настроить напоминание…</string>
+	<string name="set_priority">Изменить приоритет…</string>
+	<string name="repetition">Повторение…</string>
+	<string name="task_priority">Приоритет задачи</string>
+	<string name="pinned_tasks">Закреплённые задачи</string>
+	<string name="alarms">Напоминания</string>
+	<string name="alarm">Напоминание</string>
+	<string name="mark_as_completed">Отметить выполненным</string>
+	<string name="clear_alarm">Убрать напоминание</string>
+	<string name="exit">Выход</string>
+	<string name="enter_new_pin">Введите новый PIN</string>
+	<string name="enter_new_pin_again">Введите новый PIN ещё раз</string>
+	<string name="enter_old_pin">Введите старый PIN</string>
+	<string name="pin_does_not_match">Введённые PIN не совпадают</string>
+	<string name="wrong_pin">Неверный PIN</string>
+	<string name="fingerprint_auth_failed">Авторизация по отпечатку пальца не удалась</string>
+	<string name="touch_fingerprint_sensor">Коснитесь сканера отпечатков пальцев</string>
+	<string name="repeat_forever">Повторять бесконечно</string>
+	<string name="repeat_until">Повторять до %1$s</string>
+	<string name="dismiss">Закрыть</string>
+	<string name="repeatable_task_modified">Вы изменили повторяемую задачу</string>
+	<string-array name="months">
+		<item>Январь</item>
+		<item>Февраль</item>
+		<item>Март</item>
+		<item>Апрель</item>
+		<item>Май</item>
+		<item>Июнь</item>
+		<item>Июль</item>
+		<item>Август</item>
+		<item>Сентябрь</item>
+		<item>Октябрь</item>
+		<item>Ноябрь</item>
+		<item>Декабрь</item>
+	</string-array>
+	<string name="no_attached_note">Нет связанной заметки</string>
+	
+	<string name="note_">Заметка…</string>
+	<string name="title">Заголовок</string>
+	<string name="text">Текст</string>
+	<string name="note_deleted">Заметка удалена</string>
+	<plurals name="notes_deleted">
+		<item quantity="one">%1$d заметка удалена</item>
+		<item quantity="few">%1$d заметки удалено</item>
+		<item quantity="many">%1$d заметок удалено</item>
+	</plurals>
+	<string name="note">Заметка</string>
+	<string name="home_folder">Домашняя папка</string>
+	<string name="folders">Папки</string>
+	<string name="new_folder">Новая папка</string>
+	<string name="ask_delete_note_folder">Вы собираетесь удалить папку. Это удалит все подпапки и заметки в ней. Это действие нельзя отменить. Вы уверены?</string>
+	<string name="edit">Изменить</string>
+	<string name="move_to_folder">Переместить в папку…</string>
+	<string name="copy_to_folder">Скопировать в папку…</string>
+	<string name="folder">Папка</string>
+	<plurals name="elements_moved">
+		<item quantity="one">%1$d элемент перемещён</item>
+		<item quantity="few">%1$d элемента перемещено</item>
+		<item quantity="many">%1$d элементов перемещено</item>
+	</plurals>
+	<plurals name="notes_copied">
+		<item quantity="one">%1$d заметка скопирована</item>
+		<item quantity="few">%1$d заметки скопировано</item>
+		<item quantity="many">%1$d заметок скопировано</item>
+	</plurals>
+	<string name="in_folder">В %1$s</string>
+	<string name="move">Переместить</string>
+	<string name="copy">Копировать</string>
+	<string name="toggle_note_list_mode">Переключить режим списка</string>
+	<string name="new_list_note">Новый список</string>
+	<string name="no_notes">Пока здесь нет заметок</string>
+	<string name="list">Список</string>
+	
+	<string name="appearance">Внешний вид</string>
+	<string name="color_scheme">Цветовая схема</string>
+	<string-array name="color_scheme_names">
+		<item>Светлая</item>
+		<item>Тёмная</item>
+	</string-array>
+	<string name="language">Язык</string>
+	<string name="hide_completed_tasks">Скрывать завершённые задачи</string>
+	<string name="move_completed_tasks_down">Перемещать завешённые задачи вниз</string>
+	<string name="enable_task_context_menu">Классическое контекстное меню задачи</string>
+	<string name="notifications">Уведомления</string>
+	<string name="alarm_ringtone">Рингтон будильника</string>
+	<string name="silent">Без звука</string>
+	<string name="alarm_vibration">Вибрация будильника</string>
+	<string name="security">Безопасность</string>
+	<string name="enable_pin">Включить PIN</string>
+	<string name="change_pin">Изменить PIN</string>
+	<string name="lock_timeout">Таймаут блокировки</string>
+	<string-array name="lock_timeout_names">
+		<item>5 секунд</item>
+		<item>10 секунд</item>
+		<item>30 секунд</item>
+		<item>1 минута</item>
+		<item>2 минуты</item>
+		<item>5 минут</item>
+		<item>10 минут</item>
+		<item>30 минут</item>
+		<item>Never</item>
+	</string-array>
+	<string name="shuffle_pin_pad_keys">Перемешать клавиши PIN-пада</string>
+	<string name="enable_biometrics">Использовать биометрию</string>
+	<string name="enable_biometrics_summary">Если поддерживается устройством</string>
+	<string name="about">О программе</string>
+	<string name="copyright">Авторские права</string>
+	<string name="news_and_updates">Новости и обновления</string>
+	<string name="show_last_crash_log">Показать информацию о последней ошибке</string>
+	<string name="last_crash_log">Информация о последней ошибке</string>
+	<string name="close">Закрыть</string>
+	<string name="copy_to_clipboard">Копировать</string>
+	<string name="copied">Скопировано</string>
+	<string name="sync">Синхронизация</string>
+	<string name="export_data_to_file">Экспортировать данные в файл…</string>
+	<string name="import_data_from_file">Импортировать данные из файла…</string>
+	<string name="file_name">Имя файла</string>
+	<string name="data_export">Экспорт данных</string>
+	<string name="data_export_finished">Экспорт данных завершён</string>
+	<string name="data_export_failed">Ошибка экспорта данных</string>
+	<string name="share">Поделиться</string>
+	<string name="ask_override_file">Файл %1$s уже существует. Перезаписать?</string>
+	<string name="continue_">Продолжить</string>
+	<string name="important_notifications">Важные уведомления</string>
+	<string name="confirm_import">Импорт данных удалит все существующие задачи и заметки. Это действие не может быть отменено. Вы действительно хотите это сделать?</string>
+	<string name="data_import">Импорт данных</string>
+	<string name="data_import_">Импорт данных…</string>
+	<string name="data_import_finished">Импорт данных завешён</string>
+	<string name="data_import_failed">Ошибка импорта данных</string>
+	<string name="enable_debug_info">Включить отладочную информацию</string>
+</resources>

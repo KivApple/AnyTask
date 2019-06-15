@@ -1,0 +1,15 @@
+<resources>
+	<string name="app_name">CalendarView</string>
+	<plurals name="exercises">
+		<item quantity="one">exercise</item>
+		<item quantity="other">exercises</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">day</item>
+		<item quantity="other">days</item>
+	</plurals>
+	<plurals name="kcal">
+		<item quantity="one">kcal</item>
+		<item quantity="other">kcal</item>
+	</plurals>
+</resources>

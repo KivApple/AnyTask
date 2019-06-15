@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="PinPadDotBase">
+		<item name="android:background">@drawable/bg_dot</item>
+		<item name="android:layout_margin">20dp</item>
+		<item name="android:layout_width">@dimen/PinPadView_dot_size</item>
+		<item name="android:layout_height">@dimen/PinPadView_dot_size</item>
+	</style>
+</resources>

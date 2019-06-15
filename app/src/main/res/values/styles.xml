@@ -1,0 +1,119 @@
+<resources>
+	<style name="AppTheme" />
+	<style name="AppTheme.Light" parent="@style/PreferenceFixTheme.Light.DarkActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionModeOverlay">true</item>
+		<item name="android:windowBackground">@color/colorPrimary</item>
+		
+		<item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+		<item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+		<item name="actionBarTitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse</item>
+		<item name="actionBarSubtitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse</item>
+		<item name="actionBarTextColor">#fff</item>
+		
+		<item name="pinPadDotDrawable">@drawable/bg_pin_pad_dot</item>
+		
+		<item name="bottomSheetDialogTheme">@style/AppTheme.Light.BottomSheetDialog</item>
+		
+		<item name="textColorPrimary">#000</item>
+		<item name="textColorSecondary">#666</item>
+		<item name="textColorDisabled">#aaa</item>
+		
+		<item name="selectedBackgroundColor">#ccc</item>
+		<item name="normalBackgroundColor">#fffafafa</item>
+		
+		<item name="mediumPriorityTaskBackground">#ddffdd</item>
+		<item name="highPriorityTaskBackground">#ffffdd</item>
+		<item name="highestPriorityTaskBackground">#ffdddd</item>
+		
+		<item name="completedPriorityDateBackground">#000000</item>
+		<item name="normalPriorityDateBackground">#3F51B5</item>
+		<item name="mediumPriorityDateBackground">#00bb60</item>
+		<item name="highPriorityDateBackground">#eeaa40</item>
+		<item name="highestPriorityDateBackground">#cc2040</item>
+		
+		<item name="textColorLink">#0000ff</item>
+	</style>
+	<style name="AppTheme.Light.BottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog" />
+	
+	<style name="AppTheme.Dark" parent="@style/PreferenceFixTheme">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionModeOverlay">true</item>
+		<item name="android:windowBackground">@color/colorPrimary</item>
+		
+		<item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+		<item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+		<item name="actionBarTitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
+		<item name="actionBarSubtitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle</item>
+		<item name="actionBarTextColor">#fff</item>
+		
+		<item name="pinPadDotDrawable">@drawable/bg_pin_pad_dot</item>
+		
+		<item name="bottomSheetDialogTheme">@style/AppTheme.Dark.BottomSheetDialog</item>
+		
+		<item name="textColorPrimary">#fff</item>
+		<item name="textColorSecondary">#ccc</item>
+		<item name="textColorDisabled">#888</item>
+		
+		<item name="selectedBackgroundColor">#666</item>
+		<item name="normalBackgroundColor">#ff303030</item>
+		
+		<item name="mediumPriorityTaskBackground">#308030</item>
+		<item name="highPriorityTaskBackground">#cc8820</item>
+		<item name="highestPriorityTaskBackground">#803030</item>
+		
+		<item name="completedPriorityDateBackground">#000000</item>
+		<item name="normalPriorityDateBackground">#6090E0</item>
+		<item name="mediumPriorityDateBackground">#00bb60</item>
+		<item name="highPriorityDateBackground">#eeaa40</item>
+		<item name="highestPriorityDateBackground">#cc2040</item>
+		
+		<item name="textColorLink">#00b0ff</item>
+	</style>
+	<style name="AppTheme.Dark.BottomSheetDialog" parent="@style/Theme.Design.BottomSheetDialog" />
+	
+	<style name="ItemTask"/>
+	<style name="ItemTask.Title" parent="@style/Widget.AppCompat.EditText">
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:focusable">false</item>
+		<item name="android:focusableInTouchMode">false</item>
+	</style>
+	
+	<style name="ItemTask.CheckBox" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+		<item name="colorControlNormal">?attr/textColorSecondary</item>
+		<item name="colorControlActivated">?attr/textColorDisabled</item>
+	</style>
+	
+	<style name="AppTheme.Light.PinPadDialog" parent="Theme.AppCompat.Dialog">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		
+		<item name="android:windowFullscreen">false</item>
+		<item name="android:windowIsFloating">false</item>
+		<item name="android:windowBackground">?attr/colorPrimary</item>
+	</style>
+	
+	<style name="Animation.WindowSlideUpDown" parent="@android:style/Animation.Activity">
+		<item name="android:windowEnterAnimation">@anim/enter_slide_down</item>
+		<item name="android:windowExitAnimation">@anim/leave_slide_up</item>
+	</style>
+	<style name="Animation.WindowSlideDownUp" parent="@android:style/Animation.Activity">
+		<item name="android:windowEnterAnimation">@anim/enter_slide_up</item>
+		<item name="android:windowExitAnimation">@anim/leave_slide_down</item>
+	</style>
+	<style name="Animation.PinPadWindow" parent="@android:style/Animation.Activity">
+		<item name="android:windowEnterAnimation">@anim/none</item>
+		<item name="android:windowExitAnimation">@anim/fade_out</item>
+	</style>
+</resources>

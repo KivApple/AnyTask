@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:background="@android:color/white">
+	
+	<id.pineapple.anytask.DefocusableEditText
+		android:id="@+id/edit_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/noteCardMargin"
+		android:layout_marginLeft="@dimen/noteCardMargin"
+		android:layout_marginEnd="@dimen/noteCardMargin"
+		android:layout_marginRight="@dimen/noteCardMargin"
+		android:layout_marginTop="@dimen/noteCardMargin"
+		android:textStyle="bold"
+		android:inputType="textAutoCorrect|textCapSentences"
+		android:importantForAutofill="no"
+		android:hint="@string/title"
+		tools:text="Title"
+		tools:targetApi="o" />
+</LinearLayout>

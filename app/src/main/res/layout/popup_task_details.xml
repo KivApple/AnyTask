@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="8dp"
+	android:background="?attr/normalBackgroundColor">
+	
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<CheckBox
+			android:id="@+id/task_auto_postpone_checkbox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintStart_toStartOf="@id/barrier1"
+			app:layout_constraintEnd_toEndOf="parent" />
+		
+		<TextView
+			android:id="@+id/task_auto_postpone_checkbox_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:text="@string/auto_n_postpone"
+			app:layout_constraintTop_toBottomOf="@id/task_auto_postpone_checkbox"
+			app:layout_constraintStart_toStartOf="@id/barrier1"
+			app:layout_constraintEnd_toEndOf="parent" />
+		
+		<TextView
+			android:id="@+id/task_postpone_to_tomorrow_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toBottomOf="@id/task_auto_postpone_checkbox_label"
+			app:layout_constraintStart_toStartOf="@id/barrier1"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:drawablePadding="4dp"
+			android:focusable="true"
+			android:gravity="center_horizontal"
+			android:text="@string/postpone_to_n_tomorrow"
+			tools:drawableTop="@drawable/ic_redo_black_24dp" />
+		
+		<TextView
+			android:id="@+id/task_reschedule_to_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toBottomOf="@id/task_postpone_to_tomorrow_button"
+			app:layout_constraintStart_toStartOf="@id/barrier1"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:drawablePadding="4dp"
+			android:focusable="true"
+			android:gravity="center_horizontal"
+			android:text="@string/reschedule_n_to"
+			tools:drawableTop="@drawable/ic_swap_horiz_black_24dp" />
+		
+		<CheckBox
+			android:id="@+id/task_pin_checkbox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toBottomOf="@id/task_reschedule_to_button"
+			app:layout_constraintStart_toStartOf="@id/barrier1"
+			app:layout_constraintEnd_toEndOf="parent" />
+		
+		<TextView
+			android:id="@+id/task_pin_checkbox_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/pin"
+			android:gravity="center_horizontal"
+			app:layout_constraintTop_toBottomOf="@id/task_pin_checkbox"
+			app:layout_constraintStart_toStartOf="@id/barrier1"
+			app:layout_constraintEnd_toEndOf="parent"/>
+		
+		<android.support.constraint.Barrier
+			android:id="@+id/barrier1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:barrierDirection="start"
+			app:constraint_referenced_ids="task_pin_checkbox_label,task_pin_checkbox,task_reschedule_to_button,task_postpone_to_tomorrow_button,task_auto_postpone_checkbox_label" />
+		
+		<Spinner
+			android:id="@+id/task_priority_spinner"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toStartOf="@id/barrier1"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			android:spinnerMode="dialog" />
+		
+		<TextView
+			android:id="@+id/task_alarm_label"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:drawablePadding="8dp"
+			android:focusable="true"
+			android:gravity="center_vertical"
+			android:padding="8dp"
+			android:text="@string/reminder_not_set"
+			app:layout_constraintTop_toBottomOf="@id/task_priority_spinner"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toStartOf="@id/barrier1"
+			tools:drawableStart="@drawable/ic_alarm_gray_24dp" />
+		
+		<TextView
+			android:id="@+id/task_note_label"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:drawablePadding="8dp"
+			android:focusable="true"
+			android:gravity="center_vertical"
+			android:padding="8dp"
+			android:text="@string/no_attached_note"
+			app:layout_constraintEnd_toStartOf="@id/barrier1"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/task_alarm_label"
+			tools:drawableStart="@drawable/ic_library_books_gray_24dp" />
+		
+		<TextView
+			android:id="@+id/task_repetition_label"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:drawablePadding="8dp"
+			android:focusable="true"
+			android:gravity="center_vertical"
+			android:padding="8dp"
+			android:text="@string/no_repetition_configured"
+			app:layout_constraintEnd_toStartOf="@id/barrier1"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/task_note_label"
+			tools:drawableStart="@drawable/ic_autorenew_gray_24dp" />
+	</android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

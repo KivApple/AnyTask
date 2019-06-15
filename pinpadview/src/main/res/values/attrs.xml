@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="PinPadView">
+		<attr name="shuffleButtons" format="boolean" />
+		<attr name="pinCodeLength" format="integer" />
+		<attr name="cancelButtonTitle" format="string" />
+		<attr name="buttonsTheme" format="reference" />
+		<attr name="dotsTheme" format="reference" />
+		<attr name="dotsDrawable" format="reference" />
+	</declare-styleable>
+</resources>
